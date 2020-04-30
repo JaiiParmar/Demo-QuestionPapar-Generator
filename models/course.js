@@ -25,6 +25,14 @@ const courseSchema = new Schema({
         type: Boolean,
         default: false,
     },
+    created_at: {
+        type: Date,
+        default: Date.now(),
+    },
+    active: {
+        type: Boolean,
+        default: true,
+    }
 });
 
 //Export model

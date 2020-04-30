@@ -17,6 +17,10 @@ const programSchema = new Schema({
     active: {
         type: Boolean,
         defualt: true
+    },
+    created_at: {
+        type: Date,
+        default: Date.now(),
     }
 });
 
